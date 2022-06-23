@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Math and Date</title>
+</head>
+<body>
+    <div id="body">
+        <div id="Q1">
+            <h3>Q.1..... (Positive Integer)</h3>
+            <input type="number" name="positive-integer" id="p-int" placeholder="Enter positive interger"><button onClick="posInteger()">Enter</button>
+            <p id="p-numbr"></p>
+            <p id="p-round"></p>
+            <p id="p-floor"></p>
+            <p id="p-ceil"></p>
+        </div>
+        <div id="Q2">
+            <h3>Q.2..... (Negative Integer)</h3>
+            <input type="number" name="negative-integer" id="n-int" placeholder="Enter negative interger"><button onClick="negInteger()">Enter</button>
+            <p id="n-numbr"></p>
+            <p id="n-round"></p>
+            <p id="n-floor"></p>
+            <p id="n-ceil"></p>
+        </div>
+        <div id="Q3">
+            <h3>Q.3..... (Positive Floating point)</h3>
+            <input type="number" name="positive-floating" id="p-float" placeholder="Enter positive floating point"><button onClick="posfloat()">Enter</button>
+            <p id="pf-numbr"></p>
+            <p id="pf-round"></p>
+            <p id="pf-floor"></p>
+            <p id="pf-ceil"></p>
+        </div>
+        <div id="Q4">
+            <h3>Q.4..... (Negative Floating point)</h3>
+            <input type="number" name="negative-floating" id="n-float" placeholder="Enter negative floating point"><button onClick="negfloat()">Enter</button>
+            <p id="nf-numbr"></p>
+            <p id="nf-round"></p>
+            <p id="nf-floor"></p>
+            <p id="nf-ceil"></p>
+        </div>
+        <div id="Q5">
+            <h3>Q.5..... (Absolute value)</h3>
+            <input type="number" name="absolute-value" id="absolute-value" placeholder="Enter any value"><button onClick="absValue()">Enter</button>
+            <p id="abs"></p>
+        </div>
+        <div id="Q6">
+            <h3>Q.6..... (Random dice)</h3>
+            <button onClick="dice()">Get number</button>
+            <p id="dicevalue"></p>
+        </div>
+        <div id="Q7">
+            <h3>Q.7..... (Head or Tail)</h3>
+            <button onClick="toss()">Let's Toss</button>
+            <p id="tossvalue"></p>
+        </div>
+        <div id="Q8">
+            <h3>Q.8..... (Range 1 to 100)</h3>
+            <button onClick="random1_100()">Get Number</button>
+            <p id="random-1_100"></p>
+        </div>
+        <!-- <div id="Q9">
+            <h3>Q.9..... (Weight of user)</h3>
+            <p id=""></p>
+        </div> -->
+        <div id="Q10">
+            <h3>Q.10..... (Secret Number form 1 to 10)</h3>
+            <input type="number" name="secret number" id="secret-num" placeholder="Can you guess the number"><button onClick="secretnum()">Enter</button>
+            <p id="message"></p>
+        </div>
+        <div id="Q11">
+            <h3>Q.11..... (Current date)</h3>
+            <p id="date"></p>
+        </div>
+        <div id="Q12">
+            <h3>Q.12..... (Current month)</h3>
+            <p id="month"></p>
+        </div>
+        <div id="Q13">
+            <h3>Q.13..... (Current day)</h3>
+            <p id="day"></p>
+        </div>
+        <div id="Q14">
+            <h3>Q.14..... (Funday)</h3>
+            <p id="funday"></p>
+        </div>
+        <div id="Q15">
+            <h3>Q.15..... (First days or Last days)</h3>
+            <p id="days-message"></p>
+        </div>
+        <!-- <div id="Q16">
+            <h3>Q.16..... ( )</h3>
+            <p id=""></p>
+        </div> -->
+        <div id="Q17">
+            <h3>Q.17..... (AM/PM)</h3>
+            <p id="am-pm"></p>
+        </div>
+        <div id="Q18">
+            <h3>Q.18..... (Later date)</h3>
+            <p id="laterdate"></p>
+        </div>
+        <div id="Q19">
+            <h3>Q.19..... (2015 Ramadan)</h3>
+            <p id="ramadan"></p>
+            <p id="passed-days"></p>
+        </div>
+        <div id="Q20">
+            <h3>Q.20..... (Passed seconds)</h3>
+            <p id="ref"></p>
+            <p id="passed-sec"></p>
+        </div>
+        <div id="Q21">
+            <h3>Q.21..... (1 hour ago)</h3>
+            <p id="cDate"></p>
+            <p id="hr-1"></p>
+        </div>
+        <div id="Q22">
+            <h3>Q.22..... (100 years back)</h3>
+            <p id="cYear"></p>
+            <p id="yr-100"></p>
+        </div>
+        <div id="Q23">
+            <h3>Q.23..... (Birth year)</h3>
+            <input type="number" name="userage" id="age" placeholder="Enter your age" ><button onClick="getage()">Enter</button>
+            <p id="showage"></p>
+            <p id="birthyear"></p>
+        </div>
+        <!-- <div id="Q24">
+            <h3>Q.24..... (K-Electric Bill)</h3>
+            <div id="form">
+                <form action="" method="get">
+                    <p>Name:
+                     <input type="text" name="Name" id="name" size="20" maxlength="30" />
+                    </p>
+                    <p>Month:
+                        <input type="text" name="Month" id="monthn" size="10" maxlength="10" />
+                       </p>
+                       <p>No of Units:
+                        <input type="number" name="No of Units" id="units"/>
+                       </p>
+                       <p>Charges per unit:
+                        <input type="number" name="charges" id="charges"/>
+                       </p>
+                       <button onClick="submitBill()">Submit</button>
+                    </form>
+            </div>
+            <p id="sName"></p>
+            <p id="sMonth"></p>
+            <p id="sUnits"></p>
+            <p id="sCharges"></p><br>
+            <p id="net-amount"></p>
+            <p id="latecharges"></p>
+            <p id="gross-amount"></p>
+        </div> -->
+    </div>
+
+    <script src="./date.js"></script>
+</body>
+</html>
